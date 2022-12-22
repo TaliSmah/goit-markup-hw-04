@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфоліо</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="top-line container">
+            <!-- Панель навігації -->
+            <a class="logo-h" href="./index.html" lang="en">Web<span class="logo-header">Studio</span></a>
+            <nav>
+                <ul class="nav-menu">
+                    <li>
+                        <a class="nav-link" href="./index.html">Студія</a>
+                    </li>
+                    <li>
+                        <a class="nav-link current" href="./portfolio.html">Портфоліо</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">Контакти</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Список контактів -->
+            <ul class="contact">
+                <li>
+                    <a class="contact-link" href="mailto:info@devstudio.com">
+                        <svg width="16" height="12" viewbox="0 0 16 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M14.5 0H1.50001C0.672854 0 0 0.672853 0 1.50001V10.5C0 11.3271 0.672854 12 1.50001 12H14.5C15.3271 12 16 11.3271 16 10.5V1.50001C16 0.672853 15.3271 0 14.5 0ZM14.5 0.999994C14.5679 0.999994 14.6325 1.01409 14.6916 1.0387L8 6.83838L1.30833 1.0387C1.36742 1.01412 1.43204 0.999994 1.49998 0.999994H14.5ZM14.5 11H1.50001C1.22414 11 0.999996 10.7759 0.999996 10.5V2.09521L7.67236 7.87792C7.76661 7.95944 7.8833 7.99999 8 7.99999C8.1167 7.99999 8.23339 7.95948 8.32764 7.87792L15 2.09521V10.5C15 10.7759 14.7759 11 14.5 11Z" />
+                        </svg>
+                        info@devstudio.com
+                    </a>
+                </li>
+                <li>
+                    <a class="contact-link" href="tel:+380961111111">
+                        <svg width="10" height="16" viewbox="0 0 10 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.5 0H1.5C0.672848 0 0 0.672848 0 1.5V14.5C0 15.3272 0.672848 16 1.5 16H8.5C9.32715 16 10 15.3272 10 14.5V1.5C10 0.672848 9.32715 0 8.5 0ZM1.5 1H8.5C8.77588 1 9 1.22412 9 1.5V12H1V1.5C1 1.22412 1.22412 1 1.5 1ZM8.5 15H1.5C1.22412 15 1 14.7759 1 14.5V13H9V14.5C9 14.7759 8.77588 15 8.5 15Z" />
+                            <path
+                                d="M2.35355 13.7389C2.54882 13.9213 2.54882 14.2169 2.35355 14.3992C2.15828 14.5816 1.84172 14.5816 1.64645 14.3992C1.45118 14.2169 1.45118 13.9213 1.64645 13.7389C1.84172 13.5566 2.15828 13.5566 2.35355 13.7389Z" />
+                        </svg>
+                        +38 096 111 11 11
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="container">
+            <h1 class="visually-hidden">Перелік робіт у портфоліо</h1>
+            <!--  Фільтр -->
+            <form class="filter" action="#" method="get">
+                <button class="filter-item" type="button">
+                    <input checked type="radio" name="filter" value="Усі" id="">Усі
+                </button>
+                <button class="filter-item" type="button">
+                    <input type="radio" name="filter" value="Веб-сайт" id="">Веб-сайти
+                </button>
+                <button class="filter-item" type="button">
+                    <input type="radio" name="filter" value="Додаток" id="">Додатки
+                </button>
+                <button class="filter-item" type="button">
+                    <input type="radio" name="filter" value="Дизайн" id="">Дизайн
+                </button>
+                <button class="filter-item" type="button">
+                    <input type="radio" name="filter" value="Маркетинг" id="">Маркетинг
+                </button>
+            </form>
+            <!-- Перелік усіх робіт у портфоліо -->
+            <ul class="projects-list">
+                <li>
+                    <a href="#.">
+                        <div class="projects-item">
+                            <div class="projects-description">
+                                <img src="./images/portfolio-tehnohrjak.jpg"
+                                    alt="На екрані ноутбука сторінка сайту з фото трьох співробітників" width="366">
+                                <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+                                    відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                            </div>
+                            <h2 class="projects-title">Технокряк</h2>
+                            <p>Веб-сайт</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#.">
+                        <div class="projects-item">
+                            <div class="projects-description">
+                                <img src="./images/portfolio-bascketball-poster.jpg" alt="Двоє чоловіків грають у баскетбол"
+                                    width="366">
+                                <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+                                    відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                            </div>
+                            <h2 class="projects-title">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
+                            <p>Дизайн</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#.">
+                        <div class="projects-item">
+                            <div class="projects-description">
+                                <img src="./images/portfolio-restaurant.jpg" alt="Намальована риба з назвою ресторану" width="366">
+                                <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+                                    відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                            </div>
+                            <h2 class="projects-title">Ресторан <span lang="en">Seafood</span></h2>
+                            <p>Додаток</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#.">
+                        <div class="projects-item">
+                            <div class="projects-description">
+                                <img src="./images/portfolio-prime-project.jpg" alt="Фото накладних навушників" width="366">
+                                <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+                                    відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                            </div>
+                            <h2 class="projects-title">Проєкт <span lang="en">Prime</span></h2>
+                            <p>Маркетинг</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#.">
+                        <div class="projects-item">
+                            <div class="projects-description">
+                                <img src="./images/portfolio-boxes-project.jpg" alt="Дві коробки з надписами" width="366">
+                                <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+                                    відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                            </div>
+                            <h2 class="projects-title">Проєкт <span lang="en">Boxes</span></h2>
+                            <p>Додаток</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#.">
+                        <div class="projects-item">
+                            <div class="projects-description">
+                                <img src="./images/portfolio-inspiration.jpg" alt="На екрані монітора сторінка сайту з мапою світу"
+                                    width="366">
+                                <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+                                    відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                            </div>
+                            <h2 class="projects-title" lang="en">Inspiration has no Borders</h2>
+                            <p>Веб-сайт</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#.">
+                        <div class="projects-item">
+                            <div class="projects-description">
+                                <img src="./images/portfolio-limited-edition.jpg" alt="Розворот журналу з фото та статтями"
+                                    width="366">
+                                <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+                                    відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                            </div>
+                            <h2 class="projects-title">Видання <span lang="en">Limited Edition</span></h2>
+                            <p>Дизайн</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#.">
+                        <div class="projects-item">
+                            <div class="projects-description">
+                                <img src="./images/portfolio-lab-project.jpg" alt="На мотузці ярлик з написами" width="366">
+                                <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+                                    відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                            </div>
+                            <h2 class="projects-title">Проєкт <span lang="en">LAB</span></h2>
+                            <p>Маркетинг</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#.">
+                        <div class="projects-item">
+                            <div class="projects-description">
+                                <img src="./images/portfolio-business.jpg" alt="Фото ноутбука з руками людини над його клавіатурою"
+                                    width="366">
+                                <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+                                    відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                            </div>
+                            <h2 class="projects-title" lang="en">Growing Business</h2>
+                            <p>Додаток</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer class="footer-section">
+        <div class="footer-flex container">
+            <!-- Лого, адреса та контакти -->
+            <div>
+                <a class="logo-f" href="./index.html" lang="en">Web<span class="logo-footer">Studio</span></a>
+                <address>
+                    <ul class="adress-link">
+                        <li>
+                            <a class="contact-link-map" href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank"
+                                rel="noopener noreferrer nofollow">м. Київ, пр-т Лесі Українки, 26</a>
+                        </li>
+                        <li>
+                            <a class="contact-link-footer" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                        <li>
+                            <a class="contact-link-footer" href="tel:+380961111111">+38 096 111 11 11</a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+            <!-- Соціальні мережі -->
+            <div class="social-links">
+                <p class="social-links__title">Приєднуйтесь</p>
+                <ul class="social-links__list">
+                    <li><a href="#.">
+                            <svg width="44" height="44" fill="none">
+                                <path fill="#fff" fill-opacity=".1"
+                                    d="M44 22a21.931 21.931 0 0 1-6.444 15.556A21.931 21.931 0 0 1 22 44a21.931 21.931 0 0 1-15.556-6.444A21.931 21.931 0 0 1 0 22 21.931 21.931 0 0 1 6.444 6.444 21.931 21.931 0 0 1 22 0a21.931 21.931 0 0 1 15.556 6.444A21.931 21.931 0 0 1 44 22Z" />
+                                <g fill="#fff" clip-path="url(#a)">
+                                    <path
+                                        d="M31.98 17.88c-.046-1.063-.218-1.793-.464-2.426a4.881 4.881 0 0 0-1.157-1.774 4.922 4.922 0 0 0-1.77-1.153c-.637-.246-1.363-.418-2.426-.464-1.07-.051-1.41-.063-4.126-.063-2.715 0-3.055.012-4.122.059-1.063.046-1.793.219-2.426.465a4.879 4.879 0 0 0-1.774 1.156 4.923 4.923 0 0 0-1.152 1.77c-.247.637-.418 1.363-.465 2.426-.051 1.07-.063 1.41-.063 4.126 0 2.715.012 3.055.059 4.122.047 1.063.219 1.793.465 2.426a4.932 4.932 0 0 0 1.156 1.774c.5.508 1.106.902 1.77 1.152.637.247 1.364.419 2.426.465 1.067.047 1.407.059 4.122.059 2.716 0 3.055-.012 4.122-.059 1.063-.046 1.793-.218 2.426-.464a5.116 5.116 0 0 0 2.927-2.927c.246-.637.418-1.364.465-2.426.047-1.067.058-1.407.058-4.122s-.004-3.055-.05-4.122Zm-1.8 8.166c-.044.977-.208 1.504-.344 1.855a3.318 3.318 0 0 1-1.9 1.9c-.35.136-.882.3-1.855.343-1.055.047-1.371.059-4.04.059-2.668 0-2.989-.012-4.04-.059-.977-.043-1.504-.207-1.856-.344a3.076 3.076 0 0 1-1.148-.746 3.109 3.109 0 0 1-.747-1.148c-.136-.352-.3-.883-.343-1.856-.047-1.055-.059-1.372-.059-4.04 0-2.669.012-2.99.059-4.04.043-.977.207-1.504.343-1.856a3.04 3.04 0 0 1 .75-1.149 3.104 3.104 0 0 1 1.15-.746c.35-.136.882-.3 1.855-.344 1.055-.046 1.372-.058 4.04-.058 2.672 0 2.989.011 4.04.058.977.043 1.504.207 1.856.344.433.16.828.414 1.148.746.332.325.586.715.747 1.15.136.35.3.882.343 1.855.047 1.055.059 1.371.059 4.04 0 2.668-.012 2.98-.059 4.036Z" />
+                                    <path
+                                        d="M22.037 16.864a5.139 5.139 0 1 0 5.138 5.138 5.139 5.139 0 0 0-5.138-5.138Zm0 8.47a3.333 3.333 0 1 1 .001-6.666 3.333 3.333 0 0 1 0 6.667ZM28.578 16.661a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0Z" />
+                                </g>
+                                <defs>
+                                    <clipPath id="a">
+                                        <path fill="#fff" d="M12 12h20v20H12z" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a></li>
+                    <li><a href="#.">
+                            <svg width="44" height="44" fill="none">
+                                <path fill="#fff" fill-opacity=".1"
+                                    d="M44 22a21.931 21.931 0 0 1-6.444 15.556A21.931 21.931 0 0 1 22 44a21.931 21.931 0 0 1-15.556-6.444A21.931 21.931 0 0 1 0 22 21.931 21.931 0 0 1 6.444 6.444 21.931 21.931 0 0 1 22 0a21.931 21.931 0 0 1 15.556 6.444A21.931 21.931 0 0 1 44 22Z" />
+                                <g clip-path="url(#a)">
+                                    <path fill="#fff"
+                                        d="M32 15.799a8.551 8.551 0 0 1-2.363.647 4.077 4.077 0 0 0 1.804-2.266 8.193 8.193 0 0 1-2.6.992 4.099 4.099 0 0 0-7.093 2.804c0 .325.028.638.096.935-3.409-.166-6.425-1.8-8.452-4.289a4.128 4.128 0 0 0-.56 2.073c0 1.42.73 2.679 1.82 3.407a4.048 4.048 0 0 1-1.852-.505v.045a4.119 4.119 0 0 0 3.285 4.03 4.09 4.09 0 0 1-1.075.134c-.262 0-.527-.015-.776-.07.531 1.624 2.039 2.818 3.831 2.857a8.239 8.239 0 0 1-5.084 1.748 7.69 7.69 0 0 1-.981-.056 11.544 11.544 0 0 0 6.29 1.84c7.545 0 11.67-6.25 11.67-11.668 0-.18-.006-.356-.015-.53A8.18 8.18 0 0 0 32 15.8Z" />
+                                </g>
+                                <defs>
+                                    <clipPath id="a">
+                                        <path fill="#fff" d="M12 12h20v20H12z" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a></li>
+                    <li><a href="#.">
+                            <svg width="44" height="44" fill="none">
+                                <path fill="#fff" fill-opacity=".1"
+                                    d="M44 22a21.931 21.931 0 0 1-6.444 15.556A21.931 21.931 0 0 1 22 44a21.931 21.931 0 0 1-15.556-6.444A21.931 21.931 0 0 1 0 22 21.931 21.931 0 0 1 6.444 6.444 21.931 21.931 0 0 1 22 0a21.931 21.931 0 0 1 15.556 6.444A21.931 21.931 0 0 1 44 22Z" />
+                                <g clip-path="url(#a)">
+                                    <path fill="#fff"
+                                        d="M25.33 15.32h1.827v-3.18a23.588 23.588 0 0 0-2.66-.14c-2.633 0-4.436 1.656-4.436 4.7v2.8h-2.905v3.555h2.905V32h3.562v-8.944h2.787l.443-3.555h-3.231v-2.45c0-1.027.277-1.73 1.709-1.73Z" />
+                                </g>
+                                <defs>
+                                    <clipPath id="a">
+                                        <path fill="#fff" d="M12 12h20v20H12z" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a></li>
+                    <li><a href="#.">
+                            <svg width="44" height="44" fill="none">
+                                <path fill="#fff" fill-opacity=".1"
+                                    d="M44 22a21.931 21.931 0 0 1-6.444 15.556A21.931 21.931 0 0 1 22 44a21.931 21.931 0 0 1-15.556-6.444A21.931 21.931 0 0 1 0 22 21.931 21.931 0 0 1 6.444 6.444 21.931 21.931 0 0 1 22 0a21.931 21.931 0 0 1 15.556 6.444A21.931 21.931 0 0 1 44 22Z" />
+                                <g fill="#fff" clip-path="url(#a)">
+                                    <path
+                                        d="M31.995 32H32v-7.336c0-3.588-.772-6.352-4.967-6.352-2.017 0-3.37 1.106-3.923 2.155h-.058v-1.82h-3.978v13.352h4.142v-6.611c0-1.741.33-3.425 2.486-3.425 2.124 0 2.156 1.987 2.156 3.536V32h4.137ZM12.33 18.648h4.147V32H12.33V18.648ZM14.402 12A2.402 2.402 0 0 0 12 14.402c0 1.325 1.076 2.424 2.402 2.424 1.325 0 2.401-1.099 2.401-2.424A2.403 2.403 0 0 0 14.402 12Z" />
+                                </g>
+                                <defs>
+                                    <clipPath id="a">
+                                        <path fill="#fff" d="M12 12h20v20H12z" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a></li>
+                </ul>
+            </div>
+            <!-- Підписка на розсилку -->
+            <form class="subscribe" action="#" method="get">
+                <p class="subscribe__title">Підпишіться на розсилку</p>
+                <input class="subscribe__input" type="email" name="E-mail" placeholder="E-mail">
+                <button class="subscribe__button" type="submit">
+                    Підписатися
+                    <img src="./images/icon-send.png" alt="-->">
+                </button>
+            </form>
+        </div>
+    </footer>
+</body>     
+</html>
