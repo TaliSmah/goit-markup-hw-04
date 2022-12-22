@@ -644,7 +644,7 @@ header:before{
     }
     .contact {
         display: block;
-        max-width: 165px;
+        max-width: 170px;
     }
     .hero {
         min-height: 400px;
@@ -736,7 +736,7 @@ header:before{
     .projects-description p {
         padding: 40px 20px;
         font-size: 16px;
-        overflow: auto;
+        overflow: auto; /*скрол тексту (якщо буде додаватися його більше) в межах батьківського розміру*/
     }
 }
 
