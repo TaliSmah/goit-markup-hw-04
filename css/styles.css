@@ -606,6 +606,9 @@ header:before{
     width: 30px;
     height: 18px;
 }
+button.menu-icon {   /*це щоб позбутися background-color: buttonface*/
+    background-color: var(--primary-white-color);
+}
 .menu-icon::before,
 .menu-icon::after,
 .menu-icon span {
@@ -733,12 +736,11 @@ header:before{
         top: 0;
         right: -100%;
         width: 100%;
-        height: 100%;
+        height: 80%;
         background-color: var(--background-dark-color);
         padding: 80px 30px 30px 30px;
         transition: right 0.3s ease 0s;
         overflow: auto;
-        /* z-index: 1; */
     }
     .nav-menu._active { /*клас _active додається у html за допомогою js*/
         right: 0;
@@ -762,6 +764,7 @@ header:before{
     }
     .nav-link {
         color: var(--primary-white-color);
+        padding-right: 40%;
     }
     .current {
         color: var(--accent-color);
@@ -770,18 +773,23 @@ header:before{
         display: none;
     }
     .contact {
-        /* display: none; */
         position: fixed;
-        top: 0;
+        top: 80%;
         right: -100%;
         min-width: 100%;
-        margin-top: 380px;
+        height: 20%;
+        background-color: var(--background-dark-color);
         padding-left: 30px;
         transition: right 0.3s ease 0s;
         overflow: auto;
     }
     .contact._active {
         right: 0;
+    }
+    .contact-link {
+        color: var(--adress-color);
+        font-size: 16px;
+        line-height: 1.9;
     }
     .hero {
         margin-top: 60px;
