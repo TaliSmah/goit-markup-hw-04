@@ -54,6 +54,7 @@ button::-moz-focus-inner {
 a,
 a:visited {
     text-decoration: none;
+    -webkit-tap-highlight-color: transparent; /*щоб прибрати блакитне мерехтіння ссилок при натисканні*/
 }
 a:hover {
     text-decoration: none;
@@ -115,6 +116,9 @@ body {
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
+body._lock {
+    overflow: hidden; /*блокує скрол контенту body при активному бургері*/
+}
 header {
     width: 100%;            /*вся батьківська ширина, тут це body*/
     border-bottom: 1px solid var(--nav-line-color);
@@ -132,6 +136,7 @@ header:before{
     width: 100%;
     height: 100%;
     background-color: var(--primary-white-color);
+    z-index: 1;
 }
 .top-line {
     position: relative;
@@ -593,6 +598,39 @@ header:before{
     opacity: 1;
 }
 
+/*  !=============== Бургер-меню =============== */
+.menu-icon {
+    display: none;
+    z-index: 5;
+    position: relative;
+    width: 30px;
+    height: 18px;
+}
+.menu-icon::before,
+.menu-icon::after,
+.menu-icon span {
+    left: 0;
+    position: absolute;
+    height: 18%;
+    width: 100%;
+    transition: all 0.3s ease 0s;
+    background-color: var(--accent-color-active);
+}
+.menu-icon::before,
+.menu-icon::after {
+    content: '';
+}
+.menu-icon::before {
+    top: 0;
+}
+.menu-icon::after {
+    bottom: 0;
+}
+.menu-icon span {
+    top: 50%;
+    transform: scale(1) translate(0px, -50%);
+}
+
 /*!=============== МЕДІА-ЗАПИТИ Breakpoint ===============*/
 
 /* ---------- 993px - 1200px ---------- */
@@ -642,6 +680,7 @@ header:before{
 @media (max-width: 992px) {
     .logo-h{
         margin-right: 85px;
+        z-index: 5; /*такий, як і у бургера .menu-icon*/
     }
     .contact {
         display: block;
@@ -675,11 +714,64 @@ header:before{
     .top-line {
         height: 60px;
     }
-    nav {
+    .menu-icon {
+        display: block;
+    }
+    .nav-menu {
+        display: block ;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: var(--background-dark-color);
+        padding: 80px 30px 30px 30px;
+        transition: right 0.3s ease 0s;
+        overflow: auto;
+        /* z-index: 1; */
+    }
+    .nav-menu._active { /*клас _active додається у html за допомогою js*/
+        right: 0;
+    }
+    .nav-menu::before { /*плашка header::before не підійшла, томущо закриває чомусь собою все*/
+        content: '';
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: 60px;   /*висота як у top-line, яку плашка повинна собою прикрити*/
+        background-color: var(--primary-white-color);
+        z-index: 1;
+    }
+    .nav-menu li {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .nav-menu li:last-child {
+        margin-bottom: 0px;
+    }
+    .nav-link {
+        color: var(--primary-white-color);
+    }
+    .current {
+        color: var(--accent-color);
+    }
+    .current:after {
         display: none;
     }
-     .contact {
-        display: none;
+    .contact {
+        /* display: none; */
+        position: fixed;
+        top: 0;
+        right: -100%;
+        min-width: 100%;
+        margin-top: 380px;
+        padding-left: 30px;
+        transition: right 0.3s ease 0s;
+        overflow: auto;
+    }
+    .contact._active {
+        right: 0;
     }
     .hero {
         margin-top: 60px;
