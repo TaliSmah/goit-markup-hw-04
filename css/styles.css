@@ -630,6 +630,16 @@ header:before{
     top: 50%;
     transform: scale(1) translate(0px, -50%);
 }
+.menu-icon._active span {
+    transform: scale(0) translate(0px, -50%);
+}
+.menu-icon._active::before {
+    top: 50%;
+    transform: rotate(-45deg) translate(0px,-70%);
+}.menu-icon._active::after {
+    bottom: 50%;
+    transform: rotate(45deg) translate(0px, 70%);
+}
 
 /*!=============== МЕДІА-ЗАПИТИ Breakpoint ===============*/
 
