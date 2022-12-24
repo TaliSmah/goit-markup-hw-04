@@ -46,6 +46,7 @@ input::-ms-clear {
 }
 button {
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent; /*щоб прибрати блакитне мерехтіння кнопок при натисканні*/
 }
 button::-moz-focus-inner {
     padding: 0;
@@ -117,7 +118,7 @@ body {
     letter-spacing: 0.03em;
 }
 body._lock {
-    overflow: hidden; /*блокує скрол контенту body при активному бургері*/
+    overflow: hidden; /*_lock, доданий через js, блокує скрол контенту body при активному бургері*/
 }
 header {
     width: 100%;            /*вся батьківська ширина, тут це body*/
@@ -693,7 +694,6 @@ button.menu-icon {   /*це щоб позбутися background-color: buttonfa
 @media (max-width: 992px) {
     .logo-h{
         margin-right: 85px;
-        z-index: 5; /*такий, як і у бургера .menu-icon*/
     }
     .contact {
         display: block;
@@ -727,6 +727,10 @@ button.menu-icon {   /*це щоб позбутися background-color: buttonfa
     .top-line {
         height: 60px;
     }
+     .logo-h{
+        margin-right: 0px;
+        z-index: 5;       /*такий, як і у бургера .menu-icon*/
+    }
     .menu-icon {
         display: block;
     }
@@ -759,12 +763,15 @@ button.menu-icon {   /*це щоб позбутися background-color: buttonfa
         font-size: 20px;
         margin-bottom: 10px;
     }
+    .nav-menu li:active{
+        background-color: rgba(255, 255, 255, 0.08);
+    }
     .nav-menu li:last-child {
         margin-bottom: 0px;
     }
     .nav-link {
         color: var(--primary-white-color);
-        padding-right: 40%;
+        padding-right: 65%;
     }
     .current {
         color: var(--accent-color);
