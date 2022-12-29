@@ -63,21 +63,26 @@
             <h1 class="visually-hidden">Перелік робіт у портфоліо</h1>
             <!--  Фільтр -->
             <form class="filter" action="#" method="get">
-                <button class="filter-item" type="button">
-                    <input checked type="radio" name="filter" value="Усі" id="All">Усі
-                </button>
-                <button class="filter-item" type="button">
-                    <input type="radio" name="filter" value="Веб-сайт" id="Web">Веб-сайти
-                </button>
-                <button class="filter-item" type="button">
-                    <input type="radio" name="filter" value="Додаток" id="App">Додатки
-                </button>
-                <button class="filter-item" type="button">
-                    <input type="radio" name="filter" value="Дизайн" id="Design">Дизайн
-                </button>
-                <button class="filter-item" type="button">
-                    <input type="radio" name="filter" value="Маркетинг" id="Market">Маркетинг
-                </button>
+                <div>
+                    <input class="filter-check" checked type="radio" name="filter-btn" id="All-btn" value="All">
+                    <label for="All-btn">Усі</label>
+                </div>
+                <div>
+                    <input class="filter-check" type="radio" name="filter-btn" id="Web-btn" value="Web">
+                    <label for="Web-btn">Веб-сайт</label>
+                </div>
+                <div>
+                    <input class="filter-check" type="radio" name="filter-btn" id="App-btn" value="App">
+                    <label for="App-btn">Додаток</label>
+                </div>
+                <div>
+                    <input class="filter-check" type="radio" name="filter-btn" id="Design-btn" value="Design">
+                    <label for="Design-btn">Дизайн</label>
+                </div>
+                <div>
+                    <input class="filter-check" type="radio" name="filter-btn" id="Market-btn" value="Market">
+                    <label for="Market-btn">Маркетинг</label>
+                </div>
             </form>
             <!-- Перелік усіх робіт у портфоліо -->
             <ul class="projects-list">
